@@ -16,8 +16,11 @@
 
 <!-- główna zawartość strony-->
 <body>
+
+    
     <!-- Nagłówek główny strony, najważniejszy tytuł witryny. -->
     <h1>Enrike Komputery</h1>
+    
 
     <!-- Paragraf powitalny, który witaj użytkownika w sklepie. -->
     <p>Witaj w naszym sklepie komputerowym enrike komputery</p>
@@ -26,12 +29,16 @@
 
 
     <h3>Procesory amd,intel</h3>
+<main>
+<header>
+
 <figure></figure>
     <img src="img/i7gen14.jpg" alt="intel core i7 13 gen" width="50%">
     <figcaption>Procesory</figcaption>
 </figure>
 
 <!--ol jest listą numerowaną-->
+    <article>   
     <ul>
         <li><a href="intel3.html">Intel i3</a></li>
         <li><a href="intel5.html">Intel i5</a></li>
@@ -44,10 +51,12 @@
         <li>Intel i7</li>
         <li>Intel i9</li>
     </ul>
+    </article>
     <!--<a href="link">tekst</a> /// tak się dodaje linki do innych stron przez text-->
     <!--ul jest listą nie numerowaną-->
     <ul></ul>
     <h3>Karty Graficzne</h3>
+
 <figure>
     <img src="img/ian.jpg" alt="karta graficzna amd intel oraz nvidia" width="50%">
     <figcaption>Różne Karty Graficzne</figcaption>
@@ -76,8 +85,24 @@
         <img src="img/obudowa.jpg" alt="obudowy komputerowe takie jak:full tower,micro tower,midl tower,SFF" width="50%">
         <figcaption>Różne Obudowy do Komputerów</figcaption>
     </figure>
-    
 
+</header>
+</main>
+<aside>
+<table border="1" width="50%">
+    <tr>
+        <th>Polecane Produkty</th>
+    </tr>
+    <tr>
+        <td>Ryzen 5 5500 oraz z tym rtx 3060 12gb</td>
+    </tr>
+    <tr>
+        <td>Intel i7 13700K oraz z tym RTX 4070 12GB</td>
+    </tr>
+</table>
+</aside>
+    
+<footer>
     <strong>Dostawa darmowa jak wydasz co najmniej 250zł</strong><br>
 <!--strong jest na pogrubienie ale żeby nie robić dużych elementów-->
     <em>Adress: ul. Diamentowa 33 Gdańsk</em>
@@ -86,7 +111,10 @@
 <!--small jest na wyświetlanie tekstu w mniejszym rozmiarze-->
 <!--mark jest na zaznaczenie tekstu kolorem-->
 <!--każdą tebele się zaczyna <table> i kończy się </table>-->
-<table border="1" width="59%">
+
+    
+
+    <table border="1" width="59%">
    
     <tr>
         <th>Dni Otwarcia Sklepu</th>
@@ -121,10 +149,24 @@
         <td>12:00 - 16:00</td>
     </tr>
 
+</footer>
+
 </table>
+
+
+<a href="Karta.html">Przejście do strony z kartą graficzną</a>
  <!--tr jest to wiersz tabeli-->
   <!--th jest to komórka nagłówkowa-->
   <!--td jest to komórka z danymi-->
+  <!-- jak chcesz połączyć komórki wiersza obok siebie to trzeba dać <td colspan="2"> i usunąć tabele wcześniej -->
+  <!-- <main> używa się tylko RAZ-->
+  <!-- <aside> używa się do prezentacji treści drugorzdzielonych, np. menu, linków, reklam -->
+  <!-- <header> używa się do prezentacji głównego tematu strony-->
+  <!-- <footer> to jest stopka tej części-->
+  <!--article (coś co ma sens samo w sobie np. procesor z opisem i ceną na liście produktów)-->
+  <!--aside (dodatek do treści - coś co można bezkarnie schować i nie zepsuje strony)-->
+  <!--section (spina treść, własny nagłówek - np. sekcja produkty polecane)-->
+  
     
 
     
