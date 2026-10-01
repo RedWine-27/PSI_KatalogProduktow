@@ -6,14 +6,30 @@
     <title>Document</title>
 </head>
 <body>
+<!-- możemy dać get zamiast post np logowanie postem a wysyłanie memów get-->
 <!--action i method mają znaczenie tylko dla języka PHP-->
     <form action="skrypt.php" method="post">
         <!-- type zawsze name tylko jesli używamy PHP-->
-        <input type="text" name="imie">
-        <!-- -->
+        <input type="text" name="imie" placeholder="Wpisz swoje imię">
+        <!-- przycisk submit -->
+         <input type="email" name="email" placeholder="Wpisz swój email">
+         <!--pole typu email-->
+         <input type="number" name="wiek" min="18" max="100" placeholder="Wiek">
+         <!--pole typu number z ograniczeniem min i max-->
+         <input type="tel" name="telefon" placeholder="Wpisz swój numer telefonu">
+         <!--pole typu tel-->
+         <input type="password" name="haslo" placeholder="Wpisz swoje hasło" maxlength="15">
+         <!--pole typu password-->
+         <input type="date" name="data" placeholder="Wpisz datę">
+         <!--pole typu date/czas-->
+         <textarea name="komentarz" cols="40" rows="6" placeholder="Wpisz swój komentarz"></textarea>
+         <!--pole typu textarea -->
         <input type="submit" value="Wyślij">
+        <!-- alternatywny przycisk submit -->
         <button type="submit">Wyślij</button>
     </form>
+    <!-- placeholder robi to, że wyświetla się tekst w polu, gdy nie jest wypełnione co tam masz wpisać -->
+     <!-- maxlenght ogranicza ilość znaków w polu -->
     
 </body>
 </html>
