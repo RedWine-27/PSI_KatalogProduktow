@@ -24,6 +24,19 @@
          <!--pole typu date/czas-->
          <textarea name="komentarz" cols="40" rows="6" placeholder="Wpisz swój komentarz"></textarea>
          <!--pole typu textarea -->
+         <input type="radio" name="plec" value="kobieta" checked>Kobieta
+         <input type="radio" name="plec" value="mezczyzna">Mężczyzna
+         <!--pole typu radio-->
+         <input type="checkbox" name="zgodaReklamowa" value="tak"> Wyrażam zgodę na otrzymywanie reklam
+         <input type="checkbox" name="zgodaRegulamin" value="tak" required> Akceptuję regulamin
+         <!--pole typu checkbox-->
+         <!-- jak da się required to z starych przeglądarek i tak mogą wejść-->
+          <select name="kategoria"><!-- pod indeksem "kategoria"-->
+            <option value="" disabled selected>Wybierz kategorię</option>
+            <option value="elektronika">Elektronika</option> <!--skrypt widzi elektronika-->
+            <option value="odziez">Odzież</option> <!--skrypt widzi odziez-->
+            <option value="ksiazki">Książki</option> <!--skrypt widzi ksiazki-->
+          </select>
         <input type="submit" value="Wyślij">
         <!-- alternatywny przycisk submit -->
         <button type="submit">Wyślij</button>
