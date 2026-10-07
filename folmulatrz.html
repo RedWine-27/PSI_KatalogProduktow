@@ -33,8 +33,12 @@
          <!-- jak da się required to z starych przeglądarek i tak mogą wejść-->
           <select name="kategoria"><!-- pod indeksem "kategoria"-->
             <option value="" disabled selected>Wybierz kategorię</option>
+            <optgroup label="Odzież"> <!-- optgroup grupuje opcje w select-->
+              <option value="spodnie">Spodnie</option>
+              <option value="koszula">Koszula</option>
+              <option value="bluza">Bluza</option>
+            </optgroup>
             <option value="elektronika">Elektronika</option> <!--skrypt widzi elektronika-->
-            <option value="odziez">Odzież</option> <!--skrypt widzi odziez-->
             <option value="ksiazki">Książki</option> <!--skrypt widzi ksiazki-->
           </select>
         <input type="submit" value="Wyślij">
