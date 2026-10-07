@@ -3,17 +3,19 @@
 <head>          
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>     
+    <title>Kontakt</title>     
 </head>
 <body>  
     <form action="skrypt.php" method="post"> 
-        <input type="text" name="imie" placeholder="Wpisz swoje imię">
-        <input type="email" name="email" placeholder="Wpisz swój email">
+        <input type="text" name="imie" placeholder="Wpisz swoje imię" required>
+        <input type="email" name="email" placeholder="Wpisz swój email" required>
         <input type="number" name="wiek" min="18" max="100" placeholder="Wiek">
-        <input type="tel" name="telefon" placeholder="Wpisz swój numer telefonu">
+        <input type="tel" name="telefon" placeholder="Wpisz swój numer telefonu" 
+        pattern="[+][0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]{3}"
+        title="Format: +48 123-456-789">
         <input type="password" name="haslo" placeholder="Wpisz swoje hasło" maxlength="15">
         <input type="date" name="data" placeholder="Wpisz datę">
-        <textarea name="komentarz" cols="40" rows="6" placeholder="Wpisz swój komentarz"></textarea>
+        <textarea name="komentarz" cols="40" rows="6" minlength="10" placeholder="Wpisz swój komentarz" required></textarea>
         <input type="submit" value="Wyślij">
         <button type="submit">Wyślij</button>
         <select>

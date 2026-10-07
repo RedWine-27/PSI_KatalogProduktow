@@ -16,11 +16,13 @@
          <!--pole typu email-->
          <input type="number" name="wiek" min="18" max="100" placeholder="Wiek">
          <!--pole typu number z ograniczeniem min i max-->
-         <input type="tel" name="telefon" placeholder="Wpisz swój numer telefonu">
+         <input type="tel" name="telefon"  placeholder="Wpisz swój numer telefonu"
+                   pattern="[+][0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]{3}"
+                   title="Format: +48 123-456-789" required>
          <!--pole typu tel-->
          <input type="password" name="haslo" placeholder="Wpisz swoje hasło" maxlength="15">
          <!--pole typu password-->
-         <input type="date" name="data" placeholder="Wpisz datę">
+         <input type="date" name="data" placeholder="Wpisz datę" min="2026-01-01" max="2026-12-31">
          <!--pole typu date/czas-->
          <textarea name="komentarz" cols="40" rows="6" placeholder="Wpisz swój komentarz"></textarea>
          <!--pole typu textarea -->
