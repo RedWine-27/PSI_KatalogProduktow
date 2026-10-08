@@ -10,9 +10,17 @@
 <!--action i method mają znaczenie tylko dla języka PHP-->
     <form action="skrypt.php" method="post">
         <!-- type zawsze name tylko jesli używamy PHP-->
+         <label for="imie">Imię</label>
+         <!-- label jest po to żeby klikając w napis zaznaczało się pole input-->
         <input type="text" name="imie" placeholder="Wpisz swoje imię">
         <!-- przycisk submit -->
-         <input type="email" name="email" placeholder="Wpisz swój email">
+         <fieldset>
+          <legend>Dane do logowania</legend>
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Wpisz swój email">
+              <label for="haslo">Hasło</label>
+              <input type="password" name="haslo" placeholder="Wpisz swoje hasło" maxlength="15">
+         </fieldset>
          <!--pole typu email-->
          <input type="number" name="wiek" min="18" max="100" placeholder="Wiek">
          <!--pole typu number z ograniczeniem min i max-->
@@ -20,8 +28,6 @@
                    pattern="[+][0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]{3}"
                    title="Format: +48 123-456-789" required>
          <!--pole typu tel-->
-         <input type="password" name="haslo" placeholder="Wpisz swoje hasło" maxlength="15">
-         <!--pole typu password-->
          <input type="date" name="data" placeholder="Wpisz datę" min="2026-01-01" max="2026-12-31">
          <!--pole typu date/czas-->
          <textarea name="komentarz" cols="40" rows="6" placeholder="Wpisz swój komentarz"></textarea>
@@ -29,8 +35,10 @@
          <input type="radio" name="plec" value="kobieta" checked>Kobieta
          <input type="radio" name="plec" value="mezczyzna">Mężczyzna
          <!--pole typu radio-->
+         <label>
          <input type="checkbox" name="zgodaReklamowa" value="tak"> Wyrażam zgodę na otrzymywanie reklam
          <input type="checkbox" name="zgodaRegulamin" value="tak" required> Akceptuję regulamin
+         </label>
          <!--pole typu checkbox-->
          <!-- jak da się required to z starych przeglądarek i tak mogą wejść-->
           <select name="kategoria"><!-- pod indeksem "kategoria"-->
