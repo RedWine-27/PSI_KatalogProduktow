@@ -1,0 +1,21 @@
+a:hover {
+    outline: 2px solid #78a832;
+    outline-offset: 2px;
+}
+/*selektor po klasie*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
