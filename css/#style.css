@@ -22,3 +22,26 @@ main {
     width: 50px;
     height: 50px;
 }
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+#naglówekNiebieski {
+    color: blue;
+}
+h1.naglówekGłówny {
+    color: pink;
+}
+h1 {
+    color: red;
+}
+body {
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+header {
+    line-height: 1.0;
+}
+main {
+    background-color: rgba(0,0,255,255,0);
+}
