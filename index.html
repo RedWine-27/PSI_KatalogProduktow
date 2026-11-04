@@ -11,37 +11,16 @@
 
     <!-- Tytuł strony widoczny na zakładce przeglądarki. -->
     <title>Sklep Komputerowy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/%23style.css">
+   
     <style>
-        .site-header {
-            align-items: center;
-            background: #171b1c;
-            box-sizing: border-box;
-            color: #04436d;
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            margin-bottom: 24px;
-            padding: 14px 18px;
-            width: 100%;
-        }
-
-        .site-header img {
-            display: block;
-            height: 56px;
-            width: 56px;
-        }
-
-        .site-header h1 {
-            margin: 0;
-        }
     </style>
 </head>
      
-
+    
 <!-- główna zawartość strony-->
 <body>
-
+    <div class="container">
     
     <!-- Nagłówek główny strony, najważniejszy tytuł witryny. -->
     <h1>Enrike Komputery</h1>
@@ -55,12 +34,16 @@
 
     <h3>Procesory amd,intel</h3>
 <main>
+    <section>
+    </section>
+    <section>
 <header>
-
-<figure></figure>
+<div class="karta">
+<figure>
     <img src="img/i7gen14.jpg" alt="intel core i7 13 gen" width="50%">
     <figcaption>Procesory</figcaption>
 </figure>
+</div>
 
 <!--ol jest listą numerowaną-->
     <article>   
@@ -80,36 +63,42 @@
     <!--<a href="link">tekst</a> /// tak się dodaje linki do innych stron przez text-->
     <!--ul jest listą nie numerowaną-->
     <ul></ul>
+<div class="karta">
     <h3>Karty Graficzne</h3>
-
 <figure>
     <img src="img/ian.jpg" alt="karta graficzna amd intel oraz nvidia" width="50%">
     <figcaption>Różne Karty Graficzne</figcaption>
 </figure>
-
+</div>
+<div class="karta">
     <h3>Ram</h3>
     <figure>
         <img src="img/ram.jpg" alt="Ram Kingston Fury z " width="50%">
         <figcaption>Ram Kingston Fury</figcaption>
     </figure>
-
+</div>
+<div class="karta">
     <h3>SSD</h3>
     <figure>
         <img src="img/ssd.jpg" alt=" Różne dyski SSD takie jak: SATA III,M.2 SATA III, M.2 NVMe 3.0, M.2 NVMe 4.0" width="50%">
         <figcaption>Różne Dyski SSD</figcaption>
     </figure>
-
+</div>
+<div class="karta">
     <h3>HDD</h3>
     <figure>
         <img src="img/hdd.jpg" alt="Dysk HDD" width="50%">
         <figcaption>Dysk HDD</figcaption>
     </figure>
-
+</div>
+<div class="karta">
     <h3>Obudowy</h3>
     <figure>
         <img src="img/obudowa.jpg" alt="obudowy komputerowe takie jak:full tower,micro tower,midl tower,SFF" width="50%">
         <figcaption>Różne Obudowy do Komputerów</figcaption>
     </figure>
+</div>
+</section>
 
 </header>
 </main>
@@ -197,8 +186,18 @@
     
 
     <!-- Obrazek prezentujący temat strony lub produkt. alt opisuje grafikę dla dostępności i gdy obraz się nie załadują. -->
-    
+  <style>
+    .a { margin: 50px; }
+    .b { margin: 50px; }
+    h2 { margin: 30px; }
+    .container { margin: 0 auto;
+    background-color: pink;
+    width: 1100px;
+    margin: 0 auto;
+    }
+  </style>
 </body>
+
 
 <!-- Zamknięcie dokumentu HTML. -->
 </html>
