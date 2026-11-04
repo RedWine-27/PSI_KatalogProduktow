@@ -39,20 +39,32 @@ h1 {
     color: red;
 }
 body {
+    font-family:"Segoe UI", Arial, sans-serif; /* Ustawia czcionkę dla całej strony */
     background-color: #f0f0f0;
-    line-height: 1.6;
-    width: 1080px;
-    margin: 0 auto;
+    font-size: 16px; /* Ustawia rozmiar czcionki dla całej strony */
+    line-height: 1.6; /* Ustawia wysokość linii dla lepszej czytelności */
+}
+h1 {
+    font-size: 2rem; /* Ustawia rozmiar czcionki dla nagłówków h1 */
+    font-weight: 700; /* Ustawia grubość czcionki dla nagłówków h1 */
+    margin-bottom: 1rem; /* Dodaje odstęp poniżej nagłówków h1 */
+}
+h2 {
+    font-size: 1.5rem; /* Ustawia rozmiar czcionki dla nagłówków h2 */
+    font-weight: 600; /* Ustawia grubość czcionki dla nagłówków h2 */
+    margin-bottom: 0.75rem; /* Dodaje odstęp poniżej nagłówków h2 */
+}
+h3 {
+    font-size: 1.25rem; /* Ustawia rozmiar czcionki dla nagłówków h3 */
+    font-weight: 500; /* Ustawia grubość czcionki dla nagłówków h3 */
+    margin-bottom: 0.75rem; /* Dodaje odstęp poniżej nagłówków h3 */
 }
 header {
-    line-height: 1.0;
+    line-height: 1.0; /* Ustawia wysokość linii dla lepszej czytelności */
 }
 main {
     background-color: rgba(0,0,255,255,0);
 } 
-head {
-    background-color: rgba(0,0,255,255,0);
-}
 div.container {
     width: 1100px;
     margin: 0 auto;
