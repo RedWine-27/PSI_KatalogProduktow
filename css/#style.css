@@ -57,6 +57,8 @@ main {
 footer {
     background-color: var(--kolor-tlo);
     padding: var(--odstep-sredni); 
+    display: flex;
+    justify-content: space-around;
 }
 main > section {
     margin-bottom: var(--odstep-duzy);
@@ -69,6 +71,9 @@ main > section > h2 {
 
 .menu {
     list-style: none; /* pozbęde się kropek przy elementach listy */
+    display: flex; /* ustawia elementy listy w jednym wierszu */
+    flex-direction: row; /* ustawia kierunek elementów w wierszu */
+    align-items: center; /* wyrównuje elementy w pionie */
 }
 
 a {
@@ -94,7 +99,7 @@ div.boxdemo {
     background-color: lightblue;
 }
 div.container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto; /* centruje kontener */
 }
 div.karta {
