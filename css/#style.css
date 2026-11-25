@@ -61,6 +61,7 @@ header {
 header nav ul {
     margin: 0; /* usuwa domyślny margines listy */
     padding: 0; /* usuwa domyślny padding listy */
+    flex: 1;
 }
 header nav ul li a 
 {
@@ -91,7 +92,10 @@ main > section > h2 {
     display: flex; /* ustawia elementy listy w jednym wierszu */
     flex-direction: row; /* ustawia kierunek elementów w wierszu */
     align-items: center; /* wyrównuje elementy w pionie */
+    flex: 1;
+    flex-wrap: wrap;
 }
+
 
 a {
     text-decoration: none;
@@ -121,7 +125,7 @@ div.container {
 }
 div.karta {
     border: 1px solid var(--kolor-obramowanie); 
-    width: 25%; 
+    width: 25%;
     padding: var(--odstep-maly); 
     border-radius: 5px; 
     margin-bottom: var(--odstep-sredni);
@@ -145,6 +149,7 @@ section.dlugi-tekst p {
     line-height: 2; /* ustawia wysokość linii dla lepszej czytelności */
     max-width:65ch; /* ustawia maksymalną szerokość tekstu */
 }
+
 footer td 
 {
     text-align: center; /* centruje tekst w komórkach tabeli */
