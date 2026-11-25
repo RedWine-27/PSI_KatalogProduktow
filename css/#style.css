@@ -10,6 +10,9 @@
     --odstep-maly: 8px;
     --odstep-sredni: 16px;
     --odstep-duzy: 32px;
+
+    --cien-maly: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    --cien-duzy: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
 /* główny selektor dla wszystkich elementów */
 * { 
@@ -49,6 +52,15 @@ header {
     line-height: 1.0; 
     background-color: var(--kolor-tlo);
     padding: var(--odstep-sredni); /* dodaje wewnętrzny odstęp */
+}
+header nav ul {
+    margin: 0; /* usuwa domyślny margines listy */
+    padding: 0; /* usuwa domyślny padding listy */
+}
+header nav ul li a 
+{
+    padding: var(--odstep-maly); /* dodaje wewnętrzny odstęp */
+    transition: background-color 0.3s, color 0.3s; 
 }
 main {
     background-color: var(--kolor-tlo);
@@ -121,4 +133,12 @@ section.dlugi-tekst p {
     color: black;
     line-height: 2;
     max-width:65ch; 
+}
+section.dlugi-tekst p {
+    line-height: 2; /* ustawia wysokość linii dla lepszej czytelności */
+    max-width:65ch; /* ustawia maksymalną szerokość tekstu */
+}
+footer td 
+{
+    text-align: center; /* centruje tekst w komórkach tabeli */
 }
