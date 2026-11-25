@@ -126,9 +126,11 @@ div.karta {
     border-radius: 5px; 
     margin-bottom: var(--odstep-sredni);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    flex: 1;
 }
 div.karta:hover {
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7); 
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
 }
 div.karta img {
     max-width: 100%; 
